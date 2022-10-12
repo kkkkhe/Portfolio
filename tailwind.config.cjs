@@ -26,7 +26,9 @@ module.exports = {
       'white': '#fff',
       'light-grey': '#ced4e2',
       'grey': 'rgba(255, 255, 255, 0.5)',
-      'purple': '#6f42c1'
+      'purple': '#6f42c1',
+      
+      'blue': '#007bff'
     },
     extend: {
       boxShadow: {
