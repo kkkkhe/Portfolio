@@ -1,17 +1,16 @@
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3, DiReact, DiSass, DiJavascript1 } from "react-icons/di";
-import { SiTailwindcss, SiYarn, SiFirebase,SiTypescript, SiVite } from "react-icons/si";
+import { SiYarn, SiVite } from "react-icons/si";
+import { CssIcon, FireBaseIcon, HtmlIcon, JsIcon, ReactIcon, SassIcon, TailwindIcon, TsIcon, ViteIcon } from "../../assets/Icons";
 export const skills = [
-	{icon: <AiFillHtml5 className="w-full h-auto"/>, label: 'html5'},
-	{icon: <DiCss3 className="w-full h-auto"/>, label: 'css3'},
-	{icon: <DiReact className="w-full h-auto"/>, label: 'react'},
-	{icon: <DiSass className="w-full h-auto"/>, label: 'sass'},
-	{icon: <SiTailwindcss className="w-full h-auto"/>, label: 'tailwind'},
-	{icon: <SiYarn className="w-full h-auto"/>, label: 'yarn'},
-	{icon: <SiFirebase className="w-full h-auto"/>, label: 'firebase'},
-	{icon: <DiJavascript1 className="w-full h-auto"/>, label: 'javaScript'},
-	{icon: <SiTypescript className="w-full h-auto"/>, label: 'typeScript'},
-	{icon: <SiVite className="w-full h-auto"/>, label: 'vite'},
+	{icon: <HtmlIcon/>, label: 'html5'},
+	{icon: <CssIcon/>, label: 'css3'},
+	{icon: <ReactIcon/>, label: 'react'},
+	{icon: <SassIcon/>, label: 'sass'},
+	{icon: <TailwindIcon/>, label: 'tailwind'},
+	{icon: <SiYarn className="w-full h-auto hover:fill-blue dark:hover:fill-blue text-regal-dark dark:text-light-grey transition-all ease delay-[40]"/>, label: 'yarn'},
+	{icon: <FireBaseIcon/>, label: 'firebase'},
+	{icon: <JsIcon/>, label: 'javaScript'},
+	{icon: <TsIcon/>, label: 'typeScript'},
+	{icon: <SiVite className="w-full h-auto hover:fill-purple dark:hover:fill-purple text-regal-dark dark:text-light-grey transition-all ease delay-[40]"/>, label: 'vite'},
 ]
 
 

@@ -25,10 +25,13 @@ module.exports = {
       //light
       'white': '#fff',
       'light-grey': '#ced4e2',
-      'grey': 'rgba(255, 255, 255, 0.5)',
+      'grey': '#f9fafb',
       'purple': '#6f42c1',
       
-      'blue': '#007bff'
+      'blue': '#007bff',
+      'light-blue': '#00D8FF',
+      'pink': '#CF649A',
+      '2xblue': '#06b6d4'
     },
     extend: {
       boxShadow: {

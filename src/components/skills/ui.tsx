@@ -2,7 +2,7 @@ import skillPng from '@/assets/coding.png'
 import { skills, tags } from './config'
 export const SkillSection = () => {
 	return (
-		<div className="flex flex-1 justify-between container w-full pt-12">
+		<div className="flex flex-1 justify-between container w-full pt-12 pb-28">
 			<div>
 				<h1 className='text-[58px] font-semibold'>What I do</h1>
 				<p className='mb-12 text-[19px]'>WEB DEVELOPER WHO WANTS TO EXPLORE NEW TECH STACK</p>
