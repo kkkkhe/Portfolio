@@ -1,14 +1,14 @@
 import { useState } from 'react'
-import { Header, Hero, AboutSection } from './components'
+import { Header, Hero, AboutSection, SkillSection } from './components'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    
-    <div className='min-h-screen bg-grey dark:bg-main-dark'>
+    <div className='min-h-screen bg-grey dark:bg-main-dark text-main-dark dark:text-light-grey'>
         <Header/>
         <Hero/>
         <AboutSection/>
+        <SkillSection/>
     </div>
   )
 }

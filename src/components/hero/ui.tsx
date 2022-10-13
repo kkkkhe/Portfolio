@@ -1,4 +1,4 @@
-import person from '@/assets/dp_male.svg'
+import person from '@/assets/male.svg'
 import hand from '@/assets/Hand.gif'
 
 import Typewriter from 'typewriter-effect';
