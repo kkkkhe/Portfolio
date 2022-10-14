@@ -1,16 +1,19 @@
 import skillPng from '@/assets/coding.png'
-import { motion } from 'framer-motion'
-import { leftAnimation, rightAnimation, skills, tags } from './config'
+import { motion } from "framer-motion";
+import { leftVariants, rightVariants, skills, tags } from './config'
+
 export const SkillSection = () => {
 	return (
-		<motion.div 
-		initial='hidden'
-		whileInView='visible'
-		viewport={{once: true, amount: 0.5}}
-		className="flex flex-1 justify-between container w-full pt-12 pb-28">
+		<motion.div
+		initial="offscreen"
+		whileInView="onscreen"
+		viewport={{ once: true, amount: 0.5 }}
+		className='pt-16 pb-32'
+		>
+			<div
+		className="flex flex-1 justify-between container w-full">
 			<motion.div
-			custom={1}
-			// variants={leftAnimation}
+			variants={leftVariants}
 			>
 				<h1 className='text-[58px] font-semibold'>What I do</h1>
 				<p className='mb-12 text-[19px]'>WEB DEVELOPER WHO WANTS TO EXPLORE NEW TECH STACK</p>
@@ -36,13 +39,13 @@ export const SkillSection = () => {
 					)
 				})}
 			</motion.div>
-
-			<motion.div 
-			custom={1}
-			// variants={rightAnimation}
+			<motion.div
+			variants={rightVariants}
 			className='w-[40%] h-auto flex items-center'>
 				<img src={skillPng} alt="" />
 			</motion.div>
+		</div>
 		</motion.div>
+		
 	)
 }

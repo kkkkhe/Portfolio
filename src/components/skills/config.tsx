@@ -20,26 +20,33 @@ export const tags = [
 ]
 
 
-export const leftAnimation = {
-	hidden: {
-		opacity: 0,
-		x: -100,
+export const leftVariants = {
+	offscreen: {
+	y: 200,
+	opacity: 0,
 	},
-	visible: {
-		opacity: 1,
-		x: 0,
-		transition: {delay: 0.1}
+	onscreen: {
+	y: 0,
+	opacity: 1,
+	transition: {
+		type: "spring",
+		bounce: 0.4,
+		duration: 0.8
 	}
-}
-
-export const rightAnimation = {
-	hidden: {
-		opacity: 0,
-		x: 100,
+	}
+};
+export const rightVariants = {
+	offscreen: {
+	x: 100,
+	opacity: 0,
 	},
-	visible: {
-		opacity: 1,
-		x: 0,
-		transition: {delay: 0.1}
+	onscreen: {
+	x: 0,
+	opacity: 1,
+	transition: {
+		type: "spring",
+		duration: 0.9,
+		bounce: 0.4
 	}
-}
+	}
+};
