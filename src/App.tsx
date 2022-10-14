@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Header, Hero, AboutSection, SkillSection } from './components'
+import { Header, Hero, AboutSection, SkillSection, ProjectsSection } from './components'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -9,6 +9,7 @@ function App() {
         <Hero/>
         <AboutSection/>
         <SkillSection/>
+        <ProjectsSection/>
     </div>
   )
 }

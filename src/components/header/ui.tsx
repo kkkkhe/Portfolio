@@ -6,7 +6,7 @@ const navs = [
 	{nav: 'Home', link:'home'},
 	{nav: 'About', link:'about'},
 	{nav: 'Skills', link:'skills'},
-	{nav: 'Projects', link:'home'},
+	{nav: 'Projects', link:'projects'},
 	{nav: 'Contact', link:'home'},
 ]
 
