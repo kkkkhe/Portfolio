@@ -18,7 +18,7 @@
 
 .active .burger:after{
 	transform: rotate(45deg);
-	top: 40%;
+	top: 45%;
 }
 .line{
 	width: 100%;
@@ -30,7 +30,7 @@
 }
 .active .burger:before{
 	transform: rotate(-45deg);
-	bottom: 49%;
+	bottom: 48%;
 }
 .active .line{
 	transform: scale(0)

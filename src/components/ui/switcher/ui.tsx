@@ -1,5 +1,5 @@
 import useLocalStorage from "use-local-storage";
-import './styles.css'
+import './styles.scss'
 export const Switcher = () => {
 	const [theme, setTheme] = useLocalStorage("theme", "");
 	document.body.setAttribute('class', theme)

@@ -18,7 +18,7 @@ export const SkillSection = () => {
 			>
 				<h1 className='font-semibold 2xl:text-[58px] xl:text-[40px] sm:text-[30px]'>What I do</h1>
 				<p className='mb-12 text-[19px]'>WEB DEVELOPER WHO WANTS TO EXPLORE NEW TECH STACK</p>
-				<div className='grid grid-cols-5 mb-10'>
+				<div className='grid grid-cols-5 mb-10 small:grid-cols-4'>
 					{skills.map(({label, icon}) => {
 					return (
 						<div className='w-[70px] mb-7 grid justify-self-center '>
@@ -42,7 +42,7 @@ export const SkillSection = () => {
 			</motion.div>
 			<motion.div
 			variants={rightVariants}
-			className='h-auto items-center 2xl:max-w-[700px] xl:max-w-[500px] lg:max-w-[400px] flex justify-center md:pt-16 lg:pt-0'>
+			className='h-auto items-center 2xl:max-w-[700px] xl:max-w-[500px] lg:max-w-[400px] flex justify-center tablet:pt-16'>
 				<img className='w-full h-auto lg:max-w-[100%] md:max-w-[400px] sm:max-w-[400px]' src={skillPng} alt="" />
 			</motion.div>
 		</div>

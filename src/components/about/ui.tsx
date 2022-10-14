@@ -22,8 +22,8 @@ export const AboutSection = () => {
 			</motion.div>
 			<div
 			className='flex flex-col items-start text-[25px]'>
-				<h1 className='mb-10 text-[70px] font-semibold 2xl:text-[70px] xl:text-[40px] sm:text-[30px]'>About me</h1>
-				<div className='mb-10 max-w-[900px] leading-10 2xl:text-[30px] xl:text-[24px] sm:text-[20px]'>
+				<h1 className='mb-10 text-[70px] font-semibold small:text-2xl 2xl:text-[70px] xl:text-[40px] sm:text-[30px]'>About me</h1>
+				<div className='mb-10 max-w-[900px] small:text-lg leading-10 2xl:text-[30px] xl:text-[24px] sm:text-[20px]'>
 				A passionate Front-end Developer  🚀 having an experience of building Web applications with JavaScript / Reactjs and some other cool libraries and frameworks.
 				</div>
 				<div className='flex gap-10'>

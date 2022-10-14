@@ -17,7 +17,10 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
       'tablet': [
-        {'min': '668px', 'max': '1024px'},
+        {'min': '360px', 'max': '1024px'},
+      ],
+      'small':[
+        {'min': '360px', 'max': '640px'}
       ]
     },
     colors: {

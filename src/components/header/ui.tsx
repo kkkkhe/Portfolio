@@ -2,7 +2,6 @@ import { Switcher } from "../ui"
 import { Link } from 'react-scroll'
 import { useState } from "react"
 import { Burger } from "../ui/burger"
-import classnames from "classnames"
 const navs = [
 	{nav: 'Home', link:'home'},
 	{nav: 'About', link:'about'},
@@ -18,13 +17,12 @@ export const Header = () => {
 			<div className=" flex items-center h-[4.5rem] container justify-between">
 				<div className='dark:text-grey flex items-center gap-2 z-50'>
 					<span className="text-xl font-semibold">{"<"}</span>
-					<div className='transition ease delay-20 hover:text-purple dark:hover:text-white font-semibold text-xl font-["Agustina_Regular"]'>
+					<div className='transition ease delay-20 hover:text-purple dark:hover:text-white font-semibold tablet:text-sm md:text-xl font-["Agustina_Regular"]'>
 						DevelopedByDenis
 					</div>
 					<span className="text-xl font-semibold">{"/>"}</span>
 				</div>
-			<div className={classnames(`tablet:absolute top-0 ${active && 'top-[-392px]'} transition-all ease-linear delay-75 tablet:bg-white tablet:dark:bg-main-dark tablet:w-full left-0`,
-			)}>
+			<div className={`tablet:absolute top-[-392px] ${active && 'top-[0px]'} transition-all ease-linear delay-75 tablet:bg-white tablet:dark:bg-main-dark tablet:w-full left-0`}>
 				<ul className="lg:flex items-center dark:text-grey gap-11 text-lg font-medium tablet:pt-28 tablet:container">
 					{navs.map(({nav, link}) => {
 						return (

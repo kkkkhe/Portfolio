@@ -8,15 +8,15 @@ export const Hero = () => {
 		<Element name='home'>
 			<section  className='flex w-full pt-64 md:pb-40 items-center justify-center '>
 			<div className='flex flex-col items-center w-[400px]'>
-				<h1 className='tracking-widest font-medium space-x-1 text-[25px] text-text-black flex gap-[4px] items-center mb-4 dark:text-light-grey'>
+				<h1 className='tracking-widest small:text-lg font-medium space-x-1 text-[25px] text-text-black flex gap-[4px] items-center mb-4 dark:text-light-grey'>
 					Hi all<div className='w-10 h-auto '><img src={hand}/></div>, I'm 
-					<span className='font-bold tracking-widest text-[27px]'>Denis</span> 
+					<span className='small:text-[22px] small:font-medium font-bold tracking-widest text-[27px]'>Denis</span> 
 				</h1>
 				<div className='w-52 mb-10'>
 					<img className='w-full h-full drop-shadow-[10px_10px_5px_rgb(0,0,0,0.2)]' src={person} alt="me" />
 				</div>
 
-				<div className='flex items-center gap-1 text-black dark:text-light-grey font-normal text-[27px]'>
+				<div className='flex items-center gap-1 text-black dark:text-light-grey font-normal small:text-lg text-[27px]'>
 				<p>I am into </p>
 
 				<Typewriter
