@@ -37,11 +37,11 @@ export const leftVariants = {
 };
 export const rightVariants = {
 	offscreen: {
-	x: 100,
+	scale: 0,
 	opacity: 0,
 	},
 	onscreen: {
-	x: 0,
+	scale: 1,
 	opacity: 1,
 	transition: {
 		type: "spring",

@@ -1,23 +1,24 @@
 import about from '@/assets/about.png'
 import { PurpleButton } from '../ui/purpleButton'
 import { motion } from "framer-motion";
-import { leftVariants, rightVariants } from './config';
-
+import { leftVariants } from './config';
+import { Element } from 'react-scroll'
 
 
 export const AboutSection = () => {
 	return (
-		<motion.div
+		<Element name='about'>
+			<motion.div
 		initial="offscreen"
 		whileInView="onscreen"
 		viewport={{ once: true, amount: 0.6 }}
-		className=' md:pt-12 lg:pt-32 pb-32'
+		className='md:pt-12 lg:pt-64 pb-32'
 		>
 			<div className='container lg:flex justify-between md:block'>
 			<motion.div
 			variants={leftVariants} 
-			className='max-w-[660px] flex justify-center h-auto pr-5 2xl:max-w-[660px] xl:max-w-[560px] sm:pr-0'>
-				<img className='lg:w-full h-auto sm:max-w-[400px]' src={about} alt="" />
+			className='pr-5 sm:pr-0 h-auto items-center 2xl:max-w-[700px] xl:max-w-[500px] lg:max-w-[400px] flex justify-center'>
+				<img className='w-full h-auto lg:max-w-[100%] md:max-w-[400px] sm:max-w-[400px]' src={about} alt="" />
 			</motion.div>
 			<div
 			className='flex flex-col items-start text-[25px]'>
@@ -36,6 +37,8 @@ export const AboutSection = () => {
 			</div>
 		</div>
 		</motion.div>
+		</Element>
+		
 		
 	)
 }

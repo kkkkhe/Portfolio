@@ -1,10 +1,12 @@
 import person from '@/assets/male.svg'
 import hand from '@/assets/Hand.gif'
 import Typewriter from 'typewriter-effect';
+import { Element } from 'react-scroll'
 import { socials } from './config';
 export const Hero = () => {
 	return( 
-		<section className='flex w-full pt-64 md:pb-20 lg:pb-48 items-center justify-center '>
+		<Element name='home'>
+			<section  className='flex w-full pt-64 md:pb-40 items-center justify-center '>
 			<div className='flex flex-col items-center w-[400px]'>
 				<h1 className='tracking-widest font-medium space-x-1 text-[25px] text-text-black flex gap-[4px] items-center mb-4 dark:text-light-grey'>
 					Hi all<div className='w-10 h-auto '><img src={hand}/></div>, I'm 
@@ -39,5 +41,7 @@ export const Hero = () => {
 				
 			</div>
 		</section>
+		</Element>
+		
 	)
 }

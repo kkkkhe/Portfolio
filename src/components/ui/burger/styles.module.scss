@@ -1,0 +1,43 @@
+.burger:after, .burger:before{
+	content: '';
+	width: 100%;
+	height: 0.2rem;
+	display: flex;
+	position: absolute;
+	left: 0;
+}
+
+.burger:after{
+	top: 0;
+	transition: all 0.2s ease
+}
+.burger:before{
+	bottom: 0;
+	transition: all 0.2s ease
+}
+
+.active .burger:after{
+	transform: rotate(45deg);
+	top: 40%;
+}
+.line{
+	width: 100%;
+	height: 0.2rem;
+	position: absolute;
+	top: 11px;
+	left: 0;
+	transition: all 0.2s ease
+}
+.active .burger:before{
+	transform: rotate(-45deg);
+	bottom: 49%;
+}
+.active .line{
+	transform: scale(0)
+}
+.button{
+	width: 28px;
+	height: 25px;
+	position: relative;
+	transition: all 0.2s ease
+}
