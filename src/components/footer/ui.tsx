@@ -6,7 +6,6 @@ export const Footer = () => {
 	return (
 			<Element name='contant'>
 			<div className="bg-[#FEFBF6] dark:bg-[#121212]">
-
 			<div className="container pt-16 pb-16 ">
 				<div className="w-full flex items-center flex-col">
 					<h2 className='mb-16'>"Develop a passion for learning. If you do, you will never cease to grow."</h2>

@@ -23,7 +23,7 @@ export const Form = () => {
 	return (
 		<div className="tablet:flex flex-col items-center">
 			<h1 className="font-semibold border-b-[3px] border-purple inline-block px-2 mb-10">Get in touch</h1>
-			<form action="" ref={ref}  onSubmit={onHandleSubmit} className='md:w-96 small:w-full'>
+			<form action="" ref={ref}  onSubmit={onHandleSubmit} className='md:w-96 tablet:w-full'>
 				<div className="flex flex-col gap-y-8 mb-5">
 					<Controller
 						control={control}
