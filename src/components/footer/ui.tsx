@@ -11,7 +11,7 @@ export const Footer = () => {
 				<div className="w-full flex items-center flex-col">
 					<h2 className='mb-16'>"Develop a passion for learning. If you do, you will never cease to grow."</h2>
 					<div className='lg:flex  gap-32'>
-						<div className='w-[540px] h-auto'>
+						<div className='max-w-[540px] h-auto'>
 							<img className='' src={womanSvg} alt="woman waiting" />
 						</div>
 						<Form/>
