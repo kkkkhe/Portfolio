@@ -21,7 +21,7 @@ export const SkillSection = () => {
 				<div className='grid grid-cols-5 mb-10 small:grid-cols-4'>
 					{skills.map(({label, icon}) => {
 					return (
-						<div className='w-[70px] mb-7 grid justify-self-center '>
+						<div key={label} className='w-[70px] mb-7 grid justify-self-center '>
 							<div className='max-w-[70px] h-auto mb-3'>
 								{icon}
 							</div>
@@ -34,7 +34,7 @@ export const SkillSection = () => {
 				</div>
 				{tags.map(({text}) => {
 					return (
-						<h1 className='text-2xl'>
+						<h1 key={text} className='text-2xl'>
 							{text}
 						</h1>
 					)

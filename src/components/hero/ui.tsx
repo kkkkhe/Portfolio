@@ -2,7 +2,7 @@ import person from '@/assets/male.svg'
 import hand from '@/assets/Hand.gif'
 import Typewriter from 'typewriter-effect';
 import { Element } from 'react-scroll'
-import { socials } from './config';
+import { socials } from '../../config';
 export const Hero = () => {
 	return( 
 		<Element name='home'>

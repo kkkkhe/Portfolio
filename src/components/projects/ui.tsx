@@ -8,9 +8,9 @@ export const ProjectsSection = () => {
 			<div className="container">
 				<h1 className="mb-20 text-[40px] font-semibold">Open Source Projects</h1>
 				<div className="grid-cols-3 grid gap-6 tablet:grid-cols-2 small:grid-cols-1">
-					{projects.map(({title, description, link, image}) => {
+					{projects.map(({title, description, link, image}, id) => {
 					return (
-						<a href={link}>
+						<a href={link} key={id}>
 						<article className="max-w-md bg-[#FEFBF6] dark:bg-[#181818] rounded-xl shadow-xl drop-shadow-xl">
 							<div className="py-3 px-5">
 								<h2 className="m-0 mb-2 text-[25px]">{title}</h2>
