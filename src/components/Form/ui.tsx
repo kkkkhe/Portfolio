@@ -40,7 +40,7 @@ export const Form = () => {
 						}}
 						/>
 				</div>	
-					<button className="bg-purple text-white p-3 w-52 rounded-md" onSubmit={onHandleSubmit}>Send to e-mail</button>
+					<button className="bg-purple text-white p-3 w-52 rounded-md hover:bg-[#501fab] transition delay-75 ease" onSubmit={onHandleSubmit}>Send to e-mail</button>
 			</form>
 		</div>
 	)
