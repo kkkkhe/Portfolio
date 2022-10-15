@@ -1,4 +1,4 @@
-import pizza from '@/assets/Pizza.png'
+import pizza from '../../assets/pizza.png'
 import kinomore from '@/assets/kinomore.png'
 import portfolio from '@/assets/portfolio.png'
 export const projects = [
