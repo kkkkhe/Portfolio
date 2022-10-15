@@ -17,10 +17,10 @@ export default defineConfig({
       enabled: true
     },
     workbox: {
-      globPatterns: ['**/*.{js,css,html,ico,png,svg, webp}'],
+      globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,woff2,woff,ttf}'],
       cleanupOutdatedCaches: true,
-      globDirectory:'.',
-      swDest: path.resolve('dist', 'sw.js'),
+      globDirectory:'dist/',
+      swDest: 'dist/sw.js',
       runtimeCaching: [
         {
           urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
@@ -53,19 +53,19 @@ export default defineConfig({
         //^https:\/\/st\.kp\.yandex\.net\/.*
         //^https://firebasestorage\.googleapis\.com/.*media&token'
         //http:\/\/127\.0\.0\.1:5173/.*react-icons
-        {
-          urlPattern: RegExp('http:\/\/127\.0\.0\.1:5173/*react-icons_si.js'),
-          handler: 'CacheFirst',
-          options: {
-            cacheName: 'cross-origin',
-            expiration: {
-              maxAgeSeconds: 60 * 60 * 24
-            },
-            cacheableResponse: {
-              statuses: [0, 200]
-            }
-          }
-        },
+        // {
+        //   urlPattern: RegExp('http:\/\/127\.0\.0\.1:5173/*react-icons_si.js'),
+        //   handler: 'CacheFirst',
+        //   options: {
+        //     cacheName: 'cross-origin',
+        //     expiration: {
+        //       maxAgeSeconds: 60 * 60 * 24
+        //     },
+        //     cacheableResponse: {
+        //       statuses: [0, 200]
+        //     }
+        //   }
+        // },
       ]
     }
   })
