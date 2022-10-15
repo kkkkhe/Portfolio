@@ -10,7 +10,7 @@ export const ProjectsSection = () => {
 				<div className="grid-cols-3 grid gap-6 tablet:grid-cols-2 small:grid-cols-1">
 					{projects.map(({title, description, link, image}, id) => {
 					return (
-						<a href={link} key={id}>
+						<a href={link} key={id} className='hover:-translate-y-3 transition delay-75 ease'>
 						<article className="max-w-md bg-[#FEFBF6] dark:bg-[#181818] rounded-xl shadow-xl drop-shadow-xl">
 							<div className="py-3 px-5">
 								<h2 className="m-0 mb-2 text-[25px]">{title}</h2>
