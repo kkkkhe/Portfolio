@@ -6,3 +6,4 @@ export const projects = [
 	{title: 'movieSearch', description: 'KINOMORE clone Progressive Web Application with ofline feature, add to favorite and other', link: 'https://github.com/kkkkhe/movieSearch', image: kinomore},
 	{title: 'Portfolio', description: 'Software Developer Portfolio', link: 'https://github.com/kkkkhe/Portfolio', image: portfolio},
 ]
+

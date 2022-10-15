@@ -12,6 +12,7 @@ export default defineConfig({
     srcDir: 'src',
     filename: 'sw.ts',
     devOptions: {
+      navigateFallbackAllowlist: [/^index.html$/],
       type: 'module',
       enabled: true
     },
