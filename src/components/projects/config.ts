@@ -1,5 +1,5 @@
 // import pizza from '../../assets/pizza.png'
-import kinomore from '@/assets/kinomore.png'
+import kinomore from '../../assets/kinomore.png'
 import portfolio from '@/assets/portfolio.png'
 export const projects = [
 	// {title: 'PizzaStore-Clone', description: 'Pizza store clone with add to favorite feature', link: 'https://github.com/kkkkhe/PizzaStore-Clone', image: pizza},
