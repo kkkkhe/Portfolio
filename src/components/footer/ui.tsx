@@ -4,7 +4,7 @@ import { Form } from '../Form'
 import { Element } from 'react-scroll'
 export const Footer = () => {
 	return (
-			<Element name='contant'>
+			<Element name='contact'>
 			<div className="bg-[#FEFBF6] dark:bg-[#121212]">
 			<div className="container pt-16 pb-16 ">
 				<div className="w-full flex items-center flex-col">

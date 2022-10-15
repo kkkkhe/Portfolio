@@ -2,7 +2,7 @@ import about from '@/assets/about.png'
 import { PurpleButton } from '../ui/purpleButton'
 import { motion } from "framer-motion";
 import { leftVariants } from './config';
-import { Element } from 'react-scroll'
+import { Element, Link } from 'react-scroll'
 
 
 export const AboutSection = () => {
@@ -31,7 +31,9 @@ export const AboutSection = () => {
 						<a href="#">Contact me</a>
 					</PurpleButton>
 					<PurpleButton>
-						<a href="#">See my resume</a>
+								<Link to={'contact'} spy={true} smooth={true} duration={250}>
+									Contact me
+								</Link>
 					</PurpleButton>
 				</div>
 			</div>

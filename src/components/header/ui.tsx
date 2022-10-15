@@ -2,13 +2,12 @@ import { Switcher } from "../ui"
 import { Link } from 'react-scroll'
 import { useState } from "react"
 import { Burger } from "../ui/burger"
-import classNames from "classnames"
 const navs = [
 	{nav: 'Home', link:'home'},
 	{nav: 'About', link:'about'},
 	{nav: 'Skills', link:'skills'},
 	{nav: 'Projects', link:'projects'},
-	{nav: 'Contact', link:'contant'},
+	{nav: 'Contact', link:'contact'},
 ]
 
 export const Header = () => {
@@ -29,7 +28,7 @@ export const Header = () => {
 						{navs.map(({nav, link}, id) => {
 							return (
 								<li key={id} className={`hover:text-purple dark:hover:text-white transition ease delay-20 cursor-pointer tablet:pb-7`}>
-									<Link to={link} spy={true} smooth={true} duration={250} onSetActive={() => setActiveLink(id)}>
+									<Link to={link} spy={true} smooth={true} duration={250}>
 										{nav}
 									</Link>
 								</li>
