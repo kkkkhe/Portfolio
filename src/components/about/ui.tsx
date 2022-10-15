@@ -28,7 +28,7 @@ export const AboutSection = () => {
 				</div>
 				<div className='flex gap-10'>
 					<PurpleButton>
-						<a href="#">Contact me</a>
+						<a href="#">See my resume</a>
 					</PurpleButton>
 					<PurpleButton>
 								<Link to={'contact'} spy={true} smooth={true} duration={250}>
