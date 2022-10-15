@@ -12,15 +12,16 @@ const navs = [
 
 export const Header = () => {
 	const [active, setActive] = useState<boolean>(false)
-	const [activeLink, setActiveLink] = useState<number>(0)
 	return (
 		<div className=" drop-shadow-md bg-white dark:bg-regal-dark fixed w-full z-50 small:w-full">
 			<div className=" flex items-center h-[4.5rem] container justify-between small:justify-between">
 				<div className='dark:text-grey flex items-center gap-2 z-50'>
 					<span className="text-xl font-semibold">{"<"}</span>
-					<div className='transition ease delay-20 hover:text-purple dark:hover:text-white font-semibold tablet:text-sm md:text-xl font-["Agustina_Regular"]'>
-						DevelopedByDenis
-					</div>
+					<Link to="home" smooth={true} duration={250}>
+						<div className='transition ease delay-20 hover:text-purple dark:hover:text-white font-semibold tablet:text-sm md:text-xl font-["Agustina_Regular"]'>
+							DevelopedByDenis
+						</div>
+					</Link>
 					<span className="text-xl font-semibold">{"/>"}</span>
 				</div>
 				<div className={`tablet:absolute top-[-392px] ${active && 'top-[0px]'} transition-all ease-linear delay-75 tablet:bg-white tablet:dark:bg-main-dark tablet:w-full left-0`}>
